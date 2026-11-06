@@ -1,0 +1,15 @@
+# Cloudflare Pages 响应头配置
+
+# 带哈希的代码文件永不变化，长期缓存
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# 手部识别模型与运行文件体积大、很少变化，缓存 30 天，第二次打开更快
+/mediapipe/*
+  Cache-Control: public, max-age=2592000
+/models/*
+  Cache-Control: public, max-age=2592000
+
+# 只允许本站使用摄像头和麦克风
+/*
+  Permissions-Policy: camera=(self), microphone=(self)

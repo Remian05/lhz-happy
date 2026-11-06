@@ -1,0 +1,8 @@
+{
+  "slides": [
+    { "src": "/gallery/01.jpg", "alt": "照片 1" },
+    { "src": "/gallery/02.jpg", "alt": "照片 2" },
+    { "src": "/gallery/03.jpg", "alt": "照片 3" },
+    { "src": "/gallery/04.jpg", "alt": "照片 4" }
+  ]
+}
